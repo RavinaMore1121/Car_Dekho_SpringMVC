@@ -1,0 +1,16 @@
+package carmvcpro.pojo;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Data;
+@Data
+@javax.persistence.Entity
+public class AdminPOJO {
+	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	private int id;
+	private String username;
+	private String password;
+}
